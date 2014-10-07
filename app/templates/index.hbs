@@ -1,0 +1,16 @@
+<h3>This is the index template</h3>
+{{#each this}}
+	<p>
+		<h2>{{archive_name}}</h2>
+		<h4>Dated: {{publish_date}}</h4>
+		<h4>Author: {{author}}</h4>
+		<h6>Thoughts on the collection: {{collection_notes}}</h6>
+		<h6>Notes: {{other_notes}}</h6>
+		<p>
+			<h3>Comments</h3>
+			{{#each comments}}
+				<h5>Comment By: {{author}}</h5>
+			{{/each}}
+		</p>
+	</p>
+{{/each}}
